@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define max 5
 struct Node
 {
     int data;
@@ -8,14 +7,13 @@ struct Node
 
 };
 typedef struct Node node;
-
-void insert(node **,int,int*);
-void delete(node**,int*);
+void insert(node **,int,int *);
+void Delete(node**,int*);
 void display(node *top);
 int main()
 {
-
-    printf("Aditya Gaba \n");
+    int max=5;
+     printf ( "\nName:Ashutosh Mahar |Sec:J |Roll No:15\n");
     node *top;
     int counter=0,choice,value,pos,sizeRef=-1;
 
@@ -90,7 +88,7 @@ void display(node *top)
     printf("\n");
 }
 
-void delete(node**top,int *sizeRef)
+void Delete(node**top,int* sizeRef)
 {
     if (top == NULL)
         return;
